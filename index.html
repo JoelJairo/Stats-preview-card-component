@@ -7,38 +7,34 @@
   <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | Stats preview card component</title>
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
+  <!-- Font family -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-  <header>
-    <img src="images/image-header-mobile.jpg" alt="People in a friendly work environment" width="654" height="480"
-      srcset="images/image-header-desktop.jpg 3x">
-    <h1>Get insights that help your business grow.</h1>
-  </header>
-  <main>
-    <p>Discover the benefits of data analytics and make better decisions regarding revenue, customer
-      experience, and overall efficiency.</p>
-
-    <p>10k+ companies</p>
-    <p>314 templates</p>
-    <p>12m+ queries</p>
-  </main>
-  <footer>
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Your Name Here</a>.
+  <div class="card-container">
+    <div class="image-background">
+      <picture>
+        <source media="(min-width:700px)"
+        srcset="images/image-header-desktop.jpg">        
+          <img src="images/image-header-mobile.jpg" alt="People in a friendly work environment">                  
+      </picture>
     </div>
-  </footer>
+    <main>
+    <div class="content-wrapper">
+      <h1>Get <span class="accent">insights</span> that help your business grow.</h1>    
+      <p class="main-paragraph">Discover the benefits of data analytics and make better decisions regarding revenue, customer
+        experience, and overall efficiency.</p>
+      <div class="stats-section">
+        <p><span class="stat">10k+</span>COMPANIES</p>
+        <p><span class="stat">314</span>TEMPLATES</p>
+        <p><span class="stat">12M+</span>QUERIES</p>
+      </div>
+    </div>
+    </main>
+  </div>
 </body>
-
 </html>
