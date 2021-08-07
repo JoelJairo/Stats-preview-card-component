@@ -111,7 +111,7 @@ p {
 @media screen and (min-width: 1146px) {
   .card-container {
     display: flex;
-    margin: 150px auto;
+    margin: 140px auto;
     max-width: 1090px;
     width: 95%;
     flex-direction: row-reverse;

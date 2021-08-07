@@ -6,8 +6,12 @@ This is a solution to the [Stats preview card component challenge on Frontend Me
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Useful resources](#useful-resources)
 - [Author](#author)
 
 **Note: Delete this note and update the table of contents based on what sections you keep.**
@@ -20,6 +24,14 @@ Users should be able to:
 
 - View the optimal layout depending on their device's screen size
 
+### Screenshot
+
+![](./screenshot.png)
+
+### Links
+
+- Live Site URL: [https://joeljairo.github.io/stats-preview-card-component/](https://joeljairo.github.io/stats-preview-card-component/)
+
 ## My process
 
 ### Built with
@@ -28,6 +40,42 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - Mobile-first workflow
+
+### What I learned
+
+```html
+<!-- Responsive Pictures with HTML -->
+<picture>
+  <source
+    media="(min-width: 1146px)"
+    srcset="images/image-header-desktop.jpg"
+  />
+  <img
+    src="images/image-header-mobile.jpg"
+    alt="People in a friendly work environment"
+  />
+</picture>
+```
+
+```css
+/* Blend Mode in CSS */
+.image-background {
+  background-color: var(--soft-violet);
+  border-radius: var(--image-border-radious);
+}
+... img {
+  max-width: var(--card-max-width);
+  width: 100%;
+  mix-blend-mode: multiply;
+  opacity: 80%;
+  border-radius: var(--image-border-radious);
+}
+```
+
+### Useful resources
+
+- [https://www.linkedin.com/learning/html-essential-training-4/responsive-pictures](https://www.linkedin.com/learning/html-essential-training-4/responsive-pictures?contextUrn=urn%3Ali%3AlyndaLearningPath%3A5ebaefdc498e440b07b53ea1) - This helped me understanding the responsive pictures in HTML.
+- [https://developer.mozilla.org/en-US/docs/Web/CSS/mix-blend-mode](https://developer.mozilla.org/en-US/docs/Web/CSS/mix-blend-mode) - Here I learned how to set the image overlay mode based on the background color of the element behind.
 
 ## Author
 
