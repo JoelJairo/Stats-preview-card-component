@@ -1,3 +1,6 @@
+/* Global styles
+------------------------------------*/
+
 html {
   box-sizing: border-box;
 }
@@ -8,6 +11,7 @@ html {
 }
 
 :root {
+  /* Mobile */
   --very-dark-blue: hsl(233, 47%, 7%);
   --dark-desaturated-blue: hsl(244, 38%, 16%);
   --soft-violet: hsl(277, 64%, 61%);
@@ -16,6 +20,11 @@ html {
   --stat-headings-color: hsla(0, 0%, 100%, 0.6);
   --card-max-width: 330px;
   --image-border-radious: 10px 10px 0 0;
+  /* Desktop */
+  --image-max-width: 540px;
+  --img-border-radious-Dsktp: 0 10px 10px 0;
+  /* Tablet */
+  --card-mx-width-Tblt: 650px;
 }
 
 body {
@@ -27,6 +36,8 @@ body {
   text-align: center;
 }
 
+/* Card component
+------------------------------------*/
 .card-container {
   background-color: var(--dark-desaturated-blue);
   max-width: var(--card-max-width);
@@ -92,4 +103,77 @@ p {
 
 .stats-section {
   padding: 25px 0;
+}
+
+/* Responsive design
+------------------------------------*/
+/* Desktop */
+@media screen and (min-width: 1146px) {
+  .card-container {
+    display: flex;
+    margin: 150px auto;
+    max-width: 1090px;
+    width: 95%;
+    flex-direction: row-reverse;
+  }
+
+  .image-background {
+    flex: 1 1 var(--image-max-width);
+    border-radius: var(--img-border-radious-Dsktp);
+  }
+
+  img {
+    max-width: var(--image-max-width);
+    border-radius: var(--img-border-radious-Dsktp);
+  }
+
+  main {
+    flex: 1 1 550px;
+  }
+
+  .content-wrapper {
+    text-align: initial;
+    max-width: 400px;
+    margin: 14.7% auto;
+  }
+
+  h1 {
+    padding-top: 0;
+  }
+
+  .main-paragraph {
+    padding-bottom: 40px;
+  }
+
+  .stats-section {
+    display: flex;
+    padding-bottom: 0;
+  }
+
+  p {
+    flex: auto;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  .stat {
+    padding-bottom: 10px;
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: 700px) and (max-width: 1146px) {
+  .card-container {
+    max-width: var(--card-mx-width-Tblt);
+  }
+
+  img {
+    max-width: var(--card-mx-width-Tblt);
+  }
+
+  .content-wrapper {
+    margin: 10px auto;
+    max-width: 400px;
+    width: 85%;
+  }
 }
