@@ -26,10 +26,11 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.png)
+![](./screenshot.jpg)
 
 ### Links
 
+- Solution URL: [https://www.frontendmentor.io/solutions/stat-card-component/](https://www.frontendmentor.io/solutions/stat-card-component-using-html-responsive-pictures-and-css-blend-mode-3wTymlcmw)
 - Live Site URL: [https://joeljairo.github.io/stats-preview-card-component/](https://joeljairo.github.io/stats-preview-card-component/)
 
 ## My process

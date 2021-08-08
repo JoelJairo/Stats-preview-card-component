@@ -83,7 +83,7 @@ h1 {
 /* stat headings */
 p {
   color: var(--stat-headings-color);
-  font-size: 10px;
+  font-size: 12px;
   padding: 5px 0;
 }
 
@@ -91,6 +91,7 @@ p {
   color: var(--slightly-transparent-white);
   font-size: 15px;
   margin: 0;
+  line-height: 27px;
 }
 
 .stat {
@@ -99,6 +100,7 @@ p {
   display: block;
   font-weight: 900;
   font-size: 23px;
+  line-height: 27px;
 }
 
 .stats-section {
@@ -111,7 +113,7 @@ p {
 @media screen and (min-width: 1146px) {
   .card-container {
     display: flex;
-    margin: 140px auto;
+    margin: 147px auto;
     max-width: 1090px;
     width: 95%;
     flex-direction: row-reverse;
@@ -127,7 +129,7 @@ p {
     border-radius: var(--img-border-radious-Dsktp);
   }
 
-  main {
+  .flex-item {
     flex: 1 1 550px;
   }
 
@@ -142,7 +144,7 @@ p {
   }
 
   .main-paragraph {
-    padding-bottom: 40px;
+    padding-bottom: 13px;
   }
 
   .stats-section {
